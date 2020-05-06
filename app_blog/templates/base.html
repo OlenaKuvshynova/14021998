@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=”uk”>
+{% load static %}
+<head>
+    <title>Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Include Styles -->
+    <!DOCTYPE html>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link type="text/css" href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1> Персональний блог</h1>
+    {% block content %}
+    {% endblock %}
+    <p>Ім'я</p>
+    <p>Лєна Кувшинова<p/>
+    <p>Дата народження<p/>
+    <p>14 лютого 1998 р.<p/>
+    <p>Місце навчання<p/>
+    <p></p>НУВГП<p/>
+    <p>Посилання на сторінки:</p>
+    <p><a href="https://www.instagram.com/lenka_k1402/?hl=uk">Instagram</a></p>
+    <p><a href="https://www.facebook.com/profile.php?id=100013712761579">Facebook</a></p>
+</div>
+<!-- Javascripts Section -->
+<script src="{% static 'js/jquery.js' %}"
+     crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.min.js' %}" crossorigin="anonymous"></script>
+</body>
+</html>
